@@ -1,3 +1,8 @@
+:root{
+    --main-background: #c2e0b1;
+    --accent: #3F5F50;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -25,7 +30,7 @@ button {
     flex-direction: column;
     justify-content:  center;
     align-items: center;
-    background: #c2e0b1;
+    background: var(--main-background);
     box-shadow: 6px 6px 10px #8A8A8A;
     max-width: 550px;
 }
@@ -39,7 +44,7 @@ button {
     margin: 0 auto;
     height: 150px;
     border-radius: 10px 10px 0 0;
-    border-bottom: 4px solid #4a5c21;
+    border-bottom: 4px solid var(--accent);
 }
 h1{
     font-size:36px;
@@ -80,7 +85,7 @@ button{
 }
 input:hover,
 input:focus{
-    outline: 3px solid #3F5F50;
+    outline: 3px solid var(--accent);
 }
 
 #name{
@@ -105,7 +110,7 @@ button {
 
 input::-webkit-input-placeholder {
  font-family: 'Material Icons Outlined';
- color: #3F5F50;   
+ color: (var(--accent));   
 }
 
 input::-moz-placeholder  {
@@ -134,7 +139,7 @@ button:hover,
 button:focus {
     outline: none;
     cursor: pointer;
-    border: 3px solid #3F5F50;
+    border: 3px solid var(--accent);
     font-weight: 500;
     transition: 0.1s ease-in-out;
 }
