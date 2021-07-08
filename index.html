@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Google Material Icons</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero">
+                <img alt ="palm trees" src="palm-trees.jpg"/>
+            </div>
+            <!-- Photo by <a href="https://unsplash.com/@mvdheuvel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maarten van den Heuvel</a> on <a href="https://unsplash.com/s/photos/palm-tree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+            <h1 aria-label="lets book a trip">Let's Book a Trip 🌴</h1>
+                <p id= "note"> Required Fields are marked with an asterisk <span id = "red">*</span></p>
+            <form aria-label="form">
+                <label id="label-name" for="name">Name <span id = "red">*</span></label>
+                <input aria-label="name" id="name" type="text" placeholder="face" required/>
+                
+                <label id="label-location" for="location">Location <span id = "red">*</span></label>
+                <input aria-label="location" id="location" type="text" placeholder="location_on" required/>
+                
+                <label id="label-email" for="email">Email <span id = "red">*</span></label>
+                <input aria-label="e-mail" id="email" type="email" placeholder="email" required/>
+                
+                <button type="submit">Submit</button>
+            </form>
+          </div>  
+    </body>
+</html>

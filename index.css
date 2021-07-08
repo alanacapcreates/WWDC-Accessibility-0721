@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content:  center;
+    align-items: center;
+}
+
+.container,
+input,
+.hero,
+button {
+    border-radius: 10px;    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    background: #c2e0b1;
+    box-shadow: 6px 6px 10px #8A8A8A;
+}
+.hero{
+    width:100%;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid #4a5c21;
+}
+h1{
+    font-size:36px;
+    margin-bottom: 0;
+}
+span {
+    grid-column: 2;    
+    align-self: center;
+    color: black;
+}
+#note{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+#red{
+    color: red;
+}
+form {
+    display: grid;
+    grid-template:  0.5em 2em 0.5em 2em 0.5em 2em 3em/ 1em 0.5em 1fr 2.1em;
+    gap: 1em;
+    min-height: 450px;
+}
+
+input {
+    grid-column: 3;
+    font-family: inherit;
+    color: black;
+}
+input:hover,
+input:focus{
+    outline: 3px solid #3F5F50;
+}
+#label-name{
+    grid-row:1;
+    grid-column: 3;
+}
+#name{
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#label-location{
+    grid-row:3;
+    grid-column: 3;
+}
+#location {
+    grid-row: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#label-email{
+    grid-row:5;
+    grid-column: 3;
+}
+#email {
+    grid-row: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+input,
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 0.5em 1em;
+    color:black;
+}
+
+input::-webkit-input-placeholder {
+ font-family: 'Material Icons Outlined';
+ color: #3F5F50;   
+}
+
+input::-moz-placeholder  {
+    font-family: 'Material Icons Outlined';
+}
+
+input:-ms-input-placeholder {
+    font-family: 'Material Icons Outlined';
+}
+
+input:-moz-placeholder {
+    font-family: 'Material Icons Outlined';
+}
+
+button {
+    background: white;
+    grid-row: 7;
+    grid-column-start: 3;
+    grid-column-end:4; 
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    cursor: pointer;
+    border: 3px solid #3F5F50;
+    font-weight: 500;
+    transition: 0.1s ease-in-out;
+}
