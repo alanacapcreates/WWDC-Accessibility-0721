@@ -115,14 +115,17 @@ input::-webkit-input-placeholder {
 
 input::-moz-placeholder  {
     font-family: 'Material Icons Outlined';
+    color: (var(--accent));
 }
 
 input:-ms-input-placeholder {
     font-family: 'Material Icons Outlined';
+    color: (var(--accent));
 }
 
 input:-moz-placeholder {
     font-family: 'Material Icons Outlined';
+    color: (var(--accent));
 }
 
 button {
