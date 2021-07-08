@@ -110,22 +110,22 @@ button {
 
 input::-webkit-input-placeholder {
  font-family: 'Material Icons Outlined';
- color: (var(--accent));   
+ color: var(--accent);   
 }
 
 input::-moz-placeholder  {
     font-family: 'Material Icons Outlined';
-    color: (var(--accent));
+    color: var(--accent);
 }
 
 input:-ms-input-placeholder {
     font-family: 'Material Icons Outlined';
-    color: (var(--accent));
+    color: var(--accent);
 }
 
 input:-moz-placeholder {
     font-family: 'Material Icons Outlined';
-    color: (var(--accent));
+    color: var(--accent);
 }
 
 button {
